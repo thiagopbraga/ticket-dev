@@ -1,13 +1,3 @@
 {
-  "solicitacoes": [
-    {
-      "id": 50,
-      "data": "16/7/2022",
-      "hora": "12:02:09 A.M.",
-      "sistema": "",
-      "requisicao": "",
-      "solicitante": "",
-      "relevancia": ""
-    }
-  ]
+    "solicitacoes": []
 }
