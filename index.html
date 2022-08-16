@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de gerenciamento de tickets solicitados ao setor de desenvolvimento">
+    <meta name="author" content="Thiago Braga">
+    <title>Ticket Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Ticket Dev</h1>
+        </div>
+        <div class="subtitle">
+            <small>
+                Sistema de gerenciamento de tickets solicitados ao setor de desenvolvimento
+            </small>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <form class="formulario">
+                <div class="labelInput">
+                    <h2>Solicitação de demanda</h2>
+                </div>
+                <div class="labelInput">
+                    <label for="">
+                        Sistema
+                    </label>
+                    <input type="text" class="sistema" placeholder="Digite o nome do sistema..."/>
+                </div>
+                <div class="labelInput">
+                    <label for="">
+                        Requisição
+                    </label>
+                    <textarea class="requisicao" placeholder="Digite o motivo da requisição..."></textarea>
+                </div>
+                <div class="labelInput">
+                    <label for="">
+                        Solicitante
+                    </label>
+                    <input type="text" class="solicitante" placeholder="Digite o nome do solicitante..."/>
+                </div>
+                <div class="labelInput">
+                    <label for="">
+                        Relevância
+                    </label>
+                    <input type="text" class="relevancia" placeholder="Nível de relevância..."/>
+                </div>
+                <div class="labelInput">
+                    <input type="submit" value="Solicitar">
+                </div>
+            </form>
+        </div>
+
+        <div class="solicitacoes">
+            
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

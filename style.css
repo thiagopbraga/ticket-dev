@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+html {
+  background-color: #2a343d;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  background-color: #b30000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  height: auto;
+}
+
+.formulario {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  min-width: 500px;
+  margin: 2rem auto;
+  padding: 10px;
+}
+
+.formulario .labelInput {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.formulario .labelInput label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formulario .labelInput input {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.formulario .labelInput textarea {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  outline: none;
+}
+
+.formulario .labelInput input[type="submit"] {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: none;
+  background-color: #163c17;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.formulario .labelInput input[type="submit"]:hover {
+  background-color: #29722b;
+}
+
+/*  */
+
+.ativo {
+  background-color: #4caf50;
+}
+
+.solicitacoes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  height: auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.solicitacao {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 10px;
+  height: auto;
+  background-color: #161d34;
+  color: #fff;
+  border-radius: 15px;
+  margin: auto 10px;
+}
+
+.button-aceite {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-aceite:hover {
+  background-color: #ff0000a1;
+}
