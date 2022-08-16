@@ -24,7 +24,6 @@ html {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   padding: 10px;
   height: auto;
 }
@@ -37,43 +36,46 @@ html {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
-  min-width: 500px;
-  margin: 2rem auto;
-  padding: 10px;
+  width: 500px;
+  min-width: 400px;
+  max-width: 500px;
+  max-height: 450px;
+  margin: 2rem;
+  padding: 1rem;
 }
 
 .formulario .labelInput {
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
 .formulario .labelInput label {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .formulario .labelInput input {
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
   outline: none;
   color: #333;
 }
 
 .formulario .labelInput textarea {
-  width: 80%;
+  width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
   outline: none;
   color: #333;
@@ -82,9 +84,10 @@ html {
 .formulario .labelInput input[type="submit"] {
   width: 80%;
   padding: 0.5rem;
+  margin:auto;
   border: 1px solid #ccc;
   border-radius: 15px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   outline: none;
   background-color: #163c17;
@@ -104,8 +107,9 @@ html {
 }
 
 .solicitacoes {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
@@ -113,8 +117,7 @@ html {
 }
 
 .card {
-  width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   margin: 2rem;
   padding: 10px;
   border: 1px solid #ccc;
@@ -124,7 +127,7 @@ html {
 .solicitacao {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 300px;
   padding: 10px;
   height: auto;
   background-color: #161d34;
@@ -138,9 +141,9 @@ html {
   max-width: 300px;
   margin: 10px auto;
   padding: 5px;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 15px;
-  background-color: #ff0000;
+  background-color: #157347;
   color: #fff;
   font-weight: bold;
   display: flex;
@@ -152,5 +155,35 @@ html {
 }
 
 .button-aceite:hover {
-  background-color: #ff0000a1;
+  background-color: #198754;
+}
+
+.button-aceite:focus {
+  outline: none;
+}
+
+.button-delete {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: #dc3545;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-delete:hover {
+  background-color: #bb2d3d;
+}
+
+.button-delete:focus {
+  outline: none;
 }
