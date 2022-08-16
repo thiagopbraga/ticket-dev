@@ -17,7 +17,7 @@ const consulta = async () => {
       for (let key in solicitacao) {
         const $info = document.createElement("p");
         $info.classList.add("info");
-        $info.innerHTML = `${key.toLocaleUpperCase()}: ${solicitacao[key]}`;
+        $info.innerHTML = `${capitalizeFirstLetter(key)}: ${solicitacao[key]}`;
         $solicitacao.appendChild($info);
       }
       const $button = document.createElement("button");
@@ -86,6 +86,7 @@ document.querySelector(".formulario").addEventListener("submit", async(e) => {
 };
 await postSolicitacao();
 await consulta();
+await pesquisar();
 });
 
 const aceita = async (id, desenvolvedor) => {
@@ -110,6 +111,7 @@ const aceita = async (id, desenvolvedor) => {
   console.log(data);
   $solicitacoes.innerHTML = "";
   await consulta();
+  await pesquisar();
 };
 
 const exclui = async (id) => {
@@ -125,6 +127,11 @@ const exclui = async (id) => {
 
 $solicitacoes.innerHTML = "";
 await consulta();
+await pesquisar();
 };
 
 document.querySelector('body').addEventListener ('load', consulta);
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
