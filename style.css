@@ -90,6 +90,7 @@ html {
   background-color: #163c17;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 .formulario .labelInput input[type="submit"]:hover {
